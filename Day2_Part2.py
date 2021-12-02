@@ -10,7 +10,7 @@ for line in inputs:
 	value = int(line[1])
 	
 	if direction == 'forward':
-		horziontal = horziontal + value
+		horziontal += value
 		depth += (aim * value)
 
 	if direction == 'up':
