@@ -11,13 +11,13 @@ for line in inputs:
 	
 	if direction == 'forward':
 		horziontal = horziontal + value
-		depth = depth + (aim * value)
+		depth += (aim * value)
 
 	if direction == 'up':
-		aim = aim - value
+		aim -= value
 
 	if direction == 'down':
-		aim = aim + value
+		aim += value
 
 total = horziontal * depth
 print(total)
